@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 244, 232);
+  color: deeppink;
+  font-size: calc(10px + 0.8vw);
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContent :nth-child(1) {
+  padding-right: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  border: 1px solid hotpink;
+  border-radius: 5px;
+}
+
+.nav > h1 {
+  padding-left: 1rem;
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+}
+
+.navItems > li {
+  padding: 0.5rem;
+  margin: 1rem;
+}

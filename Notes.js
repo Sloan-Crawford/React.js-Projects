@@ -8,12 +8,12 @@
 // first, get React and Babel cdn script tags (React for development to allow for debugging, babel.min).
 // JSX preprocessor - adding type="text/babel" to the index.js script. NOT SUITABLE FOR PRODUCTION.
 
-// setting up (BETTER way):
+// *********** setting up (BETTER way) ************
 // use a good package manager (npm) and use Node.js (a good environment for developing server-side apps)
 // Create React App. In terminal navigate to folder you want to create a new react project folder:
 // npx create-react-app name-of-folder
-// cd
-
+// cd name-of-folder
+// npm start
 
 // start using react right away with:
 // ReactDOM (global object)
@@ -31,3 +31,14 @@
 // what React is actually creating with JSX are js objects that describe the element to put on the page.
 // JSX is like a function that returns us objects that react interprets to create elements.
 // with JSX we need to make sure we are returning a single parent element.
+
+// after setting up a new create-react-app and running npm start:
+// the folder will load with subfolders node_modules, public, and src. Delete all files in src.
+// note: index.html doesn't need to be created, it is already in the public folder.
+
+// Custom components:
+// a function that returns react elements (JSX objects) is considered a component (UI).
+// necessary conventions to make functions work in React:
+// 1. use PascalCase not camelCase
+// 2. call functions by wrapping with angle brackets < /> instead of using parentheses ()
+
