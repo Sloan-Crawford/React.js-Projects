@@ -14,6 +14,7 @@
 // npx create-react-app name-of-folder
 // cd name-of-folder
 // npm start
+// replace all items in src folder and get going!
 
 // start using react right away with:
 // ReactDOM (global object)
@@ -42,3 +43,7 @@
 // 1. use PascalCase not camelCase
 // 2. call functions by wrapping with angle brackets < /> instead of using parentheses ()
 
+
+// ----------- Basic Project Setup ------------
+// create folders and files: components -> App, Header, Main, etc., images -> image files
+// 

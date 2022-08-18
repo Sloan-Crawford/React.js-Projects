@@ -1,0 +1,13 @@
+import React from "react-dom"
+import "./style.css";
+import Navbar from "./Components/Navbar";
+import Main from "./Components/Main";
+
+export default function App() {
+ return (
+  <div className="container">
+  <Navbar />
+  <Main />
+  </div>
+ )
+}

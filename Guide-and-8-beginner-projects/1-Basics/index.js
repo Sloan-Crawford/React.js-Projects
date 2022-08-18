@@ -2,6 +2,9 @@
 // import React from "react"
 // import ReactDOM from "react-dom"
 
+// This is how to import components from separate files:
+// import Footer from "./Footer"
+
 // syntax: React.DOM.render(what, where)
 ReactDOM.render(<h1>React Basics</h1>, document.getElementById("root"));
 ReactDOM.render(
@@ -79,21 +82,22 @@ function H3() {
  )
 }
 
-function Header() {
+function Footer() { // see how this could be imported from a separate file in Footer.js
  return (
-   <header>
+   <footer>
     <nav>
      <h1>thanks for stopping by</h1>
     </nav>
     <footer>&copy; 2022 Sloan Crawford. All rights reserved</footer>
-   </header>
+   </footer>
  )
-}
+};
+
 function Something() {
  return (
   <div>
   <H3 />
-  <Header />
+  <Footer />
   </div>
  )
 }
