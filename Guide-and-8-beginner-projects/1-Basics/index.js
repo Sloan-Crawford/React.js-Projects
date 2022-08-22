@@ -57,8 +57,8 @@ ReactDOM.render(navbar, document.getElementById('nav'));
 // Custom components:
 // a function that returns react elements (JSX objects) is considered a component (UI).
 // necessary conventions to make functions work in React:
-// 1. use PascalCase not camel_case
-// 2. call functions by wrapping with angle brackets < /> instead of using parentheses ()
+// 1. use PascalCase not camel_case.
+// 2. call functions by wrapping with angle brackets < /> instead of using parentheses ().
 
 function Challenge() {
  return (

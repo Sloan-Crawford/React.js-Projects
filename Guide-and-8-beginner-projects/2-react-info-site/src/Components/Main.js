@@ -4,6 +4,7 @@ import "../style.css";
 export default function Main() {
  return (
   <div className="main-container">
+  <div className="img-container">
    <h1 className="title"> React: Fun Facts</h1>
    <ul className="list">
     <li>React is an open source JavaScript library used for building user interfaces.</li>
@@ -12,6 +13,7 @@ export default function Main() {
     <li>It allows us to write COMPOSABLE code, which is more maintainable and flexible.</li>
     <li>It is DECLARATIVE; It gives general instructions (as opposed to specific, IMPERATIVE instructions like in Vanilla JS).</li>
    </ul>
+  </div>
   </div>
  )
 }

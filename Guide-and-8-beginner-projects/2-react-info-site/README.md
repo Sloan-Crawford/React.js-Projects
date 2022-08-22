@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# React Fun Facts: A static webpage
+
+A beginner project to learn the process of creating a simple webpage using react.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

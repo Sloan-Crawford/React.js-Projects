@@ -3,7 +3,7 @@
 }
 
 :root {
-  --body-font: calc(0.9rem + 0.6vw);
+  --body-font: calc(0.8rem + 0.6vw);
   --nav-font: calc(1.2rem + 0.6vw);
   --large-font: calc(2rem + 0.6vw);
   --font-family: 'Inter', sans-serif;
@@ -29,14 +29,15 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   margin: auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .nav-container {
   background: var(--nav-background);
   box-shadow: 0 4px 2px -2px gray;
+  z-index: 1;
 }
 
 nav {
@@ -68,17 +69,26 @@ nav {
 }
 
 .main-container {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   color: var(--font-white);
   width: clamp(200px, 80vw, 1100px);
   margin: auto;
+  background-image: linear-gradient(rgba(0, 70, 70, 0.9), rgba(0, 70, 70, 0.9)),
+    url('./images/React-c.png');
+  background-position: right 75%;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: var(--large-font);
   font-weight: 600;
-  margin: 0 2rem;
-  padding: 2rem 0 0;
+  margin: 1rem 2rem;
+  padding: 2rem 0 1rem;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 .list {
@@ -86,6 +96,24 @@ nav {
 }
 
 .list > li {
-  padding-block: 0.5rem;
+  padding-block: 0.7rem;
   line-height: 1.5;
+  max-width: clamp(200px, 75vw, 1100px);
+}
+
+.list > li::marker {
+  color: var(--font-1);
+  font-size: var(--nav-font);
+}
+
+@media screen and (max-width: 500px) {
+  .nav-logo-text,
+  .nav-title,
+  .title {
+    font-size: smaller;
+  }
+
+  .title {
+    font-size: var(--nav-font);
+  }
 }
