@@ -46,4 +46,5 @@
 
 // ----------- Basic Project Setup ------------
 // create folders and files: components -> App, Header, Main, etc., images -> image files
-// 
+// export components, import to App, export App to index.js and render there.
+// set up google font links above style.css link in head of index.html in public folder.
